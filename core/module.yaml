@@ -1,0 +1,12 @@
+product:
+    type: lib
+    platforms: [jvm]
+
+dependencies:
+    - $libs.kotlinx.rpc.krpc.serialization.json
+    - $libs.kotlinx.rpc.core
+
+settings:
+    kotlin:
+        serialization:
+            enabled: true

@@ -1,0 +1,21 @@
+product:
+    type: jvm/app
+
+dependencies:
+    - ../core
+    - $libs.ktor.server.core
+    - $libs.ktor.serialization.kotlinx.json
+    - $libs.ktor.server.content.negotiation
+    - $libs.kotlinx.rpc.krpc.ktor.server
+    - $libs.kotlinx.rpc.krpc.ktor.client
+    - $libs.ktor.server.netty
+    - $libs.logback.classic
+    - $libs.ktor.server.config.yaml
+
+test-dependencies:
+    - $libs.ktor.server.test.host
+    - $libs.kotlin.test.junit
+
+settings:
+    jvm:
+        mainClass: io.ktor.server.netty.EngineMain
